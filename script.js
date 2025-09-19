@@ -95,7 +95,7 @@ function updateGradeOptions() {
 
 	let grades;
 	if (gradingSystem === "new") {
-		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"];
+		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];
 	} else {
 		grades = ["A+", "A", "B+", "B", "C+", "C", "D+", "D", "F"];
 	}
