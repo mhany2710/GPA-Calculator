@@ -95,7 +95,7 @@ function updateGradeOptions() {
 
 	let grades;
 	if (gradingSystem === "new") {
-		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"];
+		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];
 	} else {
 		grades = ["A+", "A", "B+", "B", "C+", "C", "D+", "D", "F"];
 	}
@@ -261,6 +261,8 @@ function getGradePoints(grade) {
 				return 2;
 			case "D":
 				return 1.5;
+			case "D-":
+				return 1.0;
 			case "F":
 				return 0.0;
 			default:
