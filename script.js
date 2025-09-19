@@ -95,7 +95,7 @@ function updateGradeOptions() {
 
 	let grades;
 	if (gradingSystem === "new") {
-		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];
+		grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"];
 	} else {
 		grades = ["A+", "A", "B+", "B", "C+", "C", "D+", "D", "F"];
 	}
@@ -240,31 +240,29 @@ function getGradePoints(grade) {
 	if (gradingSystem === "new") {
 		switch (grade) {
 			case "A+":
-			return 4.0;
-		case "A":
-			return 3.7;
-		case "A-":
-			return 3.4;
-		case "B+":
-			return 3.2;
-		case "B":
-			return 3.0;
-		case "B-":
-			return 2.8;
-		case "C+":
-			return 2.6;
-		case "C":
-			return 2.4;
-		case "C-":
-			return 2.2;
-		case "D+":
-			return 2;
-		case "D":
-			return 1.5;
-		case "D-":
-			return 1;
-		case "F":
-			return 0.0;
+				return 4.0;
+			case "A":
+				return 3.7;
+			case "A-":
+				return 3.4;
+			case "B+":
+				return 3.2;
+			case "B":
+				return 3.0;
+			case "B-":
+				return 2.8;
+			case "C+":
+				return 2.6;
+			case "C":
+				return 2.4;
+			case "C-":
+				return 2.2;
+			case "D+":
+				return 2;
+			case "D":
+				return 1.5;
+			case "F":
+				return 0.0;
 			default:
 				return 0.0;
 		}
